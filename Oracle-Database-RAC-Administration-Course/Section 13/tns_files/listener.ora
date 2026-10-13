@@ -1,0 +1,8 @@
+SID_LIST_LISTENER=
+   (SID_LIST=
+        (SID_DESC=
+          (GLOBAL_DBNAME=stdrac.localdomain)
+          (SID_NAME=stdrac1)
+          (ORACLE_HOME=/u01/app/oracle/product/12.2.0/db_1)
+        )
+      )

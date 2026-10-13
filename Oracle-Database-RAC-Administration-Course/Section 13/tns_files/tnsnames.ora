@@ -1,0 +1,42 @@
+RAC =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = srv-scan)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = rac.localdomain)
+    )
+  )
+
+# in srv1, srv2:
+
+STDRAC =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = srva)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = stdrac.localdomain)) 
+  )
+
+
+# in srva:
+STDRAC =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = srva)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = stdrac.localdomain) (UR=A)) 
+  )
+
+
+# in srvb:
+STDRAC =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = srvb)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = stdrac.localdomain) (UR=A)) 
+  )

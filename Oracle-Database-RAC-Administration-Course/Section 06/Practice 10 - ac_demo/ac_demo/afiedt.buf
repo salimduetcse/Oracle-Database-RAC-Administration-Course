@@ -1,0 +1,2 @@
+select count(*) , status  from gv$session where username='SCOTT' group by status
+/

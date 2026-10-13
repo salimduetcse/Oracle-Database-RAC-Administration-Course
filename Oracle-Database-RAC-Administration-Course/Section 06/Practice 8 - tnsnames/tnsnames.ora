@@ -1,0 +1,25 @@
+# in srv1:
+
+SOESRV =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = srv-scan)(PORT = 1521))
+ (CONNECT_DATA =
+   (SERVER = DEDICATED)
+   (SERVICE_NAME = soesrv.localdomain)
+ )
+)
+
+
+
+# in the hosting PC
+
+SOESRV =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.56.91)(PORT = 1521))
+  (CONNECT_DATA =
+   (SERVER = DEDICATED)
+   (SERVICE_NAME = soesrv.localdomain)
+ )
+)
+
+
