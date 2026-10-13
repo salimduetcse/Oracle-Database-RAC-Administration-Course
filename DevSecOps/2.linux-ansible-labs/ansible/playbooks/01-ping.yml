@@ -1,7 +1,0 @@
-- name: Ping managed nodes
-  hosts: nodes
-  gather_facts: false
-  tasks:
-    - name: Ping
-      ansible.builtin.ping:
-
